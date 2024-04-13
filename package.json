@@ -9,7 +9,7 @@
   "author": "Amir 😎",
   "license": "ISC",
   "peerDependencies": {
-    "react": "^16.14.0"
+    "react": "^18.2.0"
   },
   "dependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
