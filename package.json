@@ -1,0 +1,25 @@
+{
+  "name": "sharedsimplestate",
+  "version": "1.0.0",
+  "description": "this package just for test code.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "author": "Amir 😎",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.14.0"
+  },
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "rollup": "^4.14.2"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-react": "^7.24.1",
+    "@rollup/plugin-babel": "^6.0.4"
+  }
+}
