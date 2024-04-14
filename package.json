@@ -1,6 +1,6 @@
 {
   "name": "sharedsimplestate",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "this package just for test code.",
   "main": "dist/index.js",
   "scripts": {
