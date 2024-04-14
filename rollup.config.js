@@ -6,11 +6,5 @@ export default {
     name: 'useSharedSimpleState', // Name of the exported object
     file: 'dist/index.js', // Output file
     format: 'cjs',
-  },
-  plugins: [
-    babel({
-      babelHelpers: 'bundled',
-      exclude: 'node_modules/**',
-    }),
-  ],
+  }
 };
