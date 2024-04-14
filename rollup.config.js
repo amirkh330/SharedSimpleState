@@ -3,6 +3,8 @@ export default {
   output: {
     name: 'useSharedSimpleState', // Name of the exported object
     file: 'dist/index.js', // Output file
-    format: 'cjs',
-  }
+    format: 'es',
+    sourcemap: true,
+  },
+  external: ['react'],
 };
