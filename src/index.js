@@ -1,19 +1,22 @@
-import { createContext, useContext, useState } from "react";
+import React, { createContext, useState, useContext } from "react";
 
-const SharedStateContext = createContext();
-const SharedStateProvider = ({ state, children }) => {
-  const [data, setData] = useState(state);
+const SharedSimpleStateContext = createContext();
 
-  return React.createElement(
-    SharedSimpleStateContext.Provider,
-    { value: { data, setData } },
-    children
+export const useSharedSimpleState = (initialState) => {
+  const [state, setState] = useState(initialState);
+
+  const sharedState = useContext(SharedSimpleStateContext);
+
+  if (sharedState) {
+    sharedState.setState(state);
+  }
+
+  return [state, setState];
+};
+
+export const SharedStateProvider = ({ children }) => {
+  const [state, setState] = useState(null);
+  return (
+    React.createElement(SharedSimpleStateContext.Provider, { value: { state, setState } }, children)
   );
 };
-const useSharedStateHook = () => {
-  const data = useContext(SharedStateContext);
-
-  return [data.data, data.setData];
-};
-
-export default { useSharedStateHook, SharedStateProvider };
