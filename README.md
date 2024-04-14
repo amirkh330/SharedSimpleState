@@ -1,6 +1,6 @@
-###SharedSimpleState Package Documentation
+### SharedSimpleState Package Documentation
 
-##Installation
+## Installation
 To install the sharedsimplestate package, you can use npm or yarn. 
 
 
@@ -10,7 +10,7 @@ Using npm:
 Using yarn:
 ```yarn add sharedsimplestate```
 
-##Usage
+## Usage
 Import the necessary dependencies in your React application:
 ```
 import React from 'react';                
